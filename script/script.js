@@ -67,3 +67,48 @@ console.log(fruits);
     const mixed = ["apple", 10, true, null];
     console.log(mixed);
 }
+
+{
+    //✅ Example 6: একই অ্যারেতে নতুন মান যোগ (push)
+
+
+    const colors = ["red", "green", "blue"];
+    colors.push("yellow");
+    console.log(colors);
+
+}
+
+{
+    //✅ Example 7: অ্যারে থেকে শেষের মান বাদ দেওয়া (pop)
+
+
+    const cities = ["Dhaka", "chittagong", "Sylhet"];
+    cities.pop();
+    console.log(cities);
+}
+
+{
+    //✅ Example 8: অ্যারে থেকে প্রথম মান বাদ দেওয়া (shift)
+
+
+    const bikes = ["Yamaha", "Honda", "Suzuki"];
+    bikes.shift();
+    console.log(bikes);
+}
+
+{
+    //✅ Example 9: অ্যারেতে প্রথমে মান যোগ করা (unshift)
+
+
+    const drinks = ["Coke", "Pepsi"];
+    drinks.unshift("Sprite");
+    console.log(drinks);
+}
+
+{
+    //✅ Example 10: অ্যারে আইটেম গোনা (length)
+
+
+    const mobiles = ["iPhon", "Samsung", "Realme", "Oppo"];
+    console.log(mobiles.length);
+}
