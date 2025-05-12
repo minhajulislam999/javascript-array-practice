@@ -112,3 +112,44 @@ console.log(fruits);
     const mobiles = ["iPhon", "Samsung", "Realme", "Oppo"];
     console.log(mobiles.length);
 }
+
+{
+    //✅ Example 11: নির্দিষ্ট index থেকে মান বের করা
+
+
+    const animals = ["cat", "dog", "cow", "goat"];
+    console.log(animals[2]);
+}
+
+{
+    //✅ Example 12: নির্দিষ্ট index এর মান পরিবর্তন করা
+
+
+    const birds = ["sparrow", "parrot", "pigeon"];
+    birds[1] = "eagle";
+    console.log(birds);
+}
+
+{
+    //✅ Example 13: অ্যারের সব আইটেম একসাথে যোগ (join)
+
+
+    const letters = ["A", "B", "C", "D"];
+    const result = letters.join("+");
+    console.log(result);
+}
+
+{
+    //✅ Example 14: অ্যারে উল্টে দেওয়া (reverse)
+
+
+    const nums = [1, 2, 3, 4, 5];
+    nums.reverse();
+    console.log(nums);
+}
+
+{
+    const names = ["Minhaj", "Rafi", "Jamal", "Arif"];
+    names.sort();
+    console.log(names);
+}
