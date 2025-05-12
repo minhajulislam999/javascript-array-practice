@@ -158,6 +158,8 @@ console.log(fruits);
     console.log(names);
 }
 
+//-----------------
+
 {
     const fruits = ["apple", "banana", "orange"];
     console.log(fruits);
@@ -201,4 +203,74 @@ console.log(fruits);
     const animals = ["dog", "cat", "cow"];
     animals[0] = "tiger";
     console.log(animals);
+}
+
+{
+    const countries = ["Bangladesh", "Pakistan", "Madina"];
+    console.log(countries[0]);
+}
+
+{
+    const onlyMangoes = [];
+    onlyMangoes[0] = "langra";
+    onlyMangoes[1] = "Himsagar";
+    onlyMangoes[2] = "Fazli";
+    console.log(onlyMangoes);
+}
+
+//Ans: 3
+
+{
+    const mixed = ["string", 10, false, null];
+    console.log(mixed)
+}
+
+//Ans: 4
+{
+    const arrayPush = ["string", "number", "boolian", "null", "undefined"]
+    arrayPush.push("pushMathod");
+    console.log(arrayPush);
+}
+
+//Ans: 5
+{
+    const mobiles = ["Symphony", "itel", "chinaPhon", "iPhone"];
+    mobiles.pop();
+    console.log(mobiles);
+}
+
+
+//Ans: 6
+{
+    const countries = ["india", "Pakistan", "Bangladesh"];
+    countries.shift();
+    console.log(countries);
+}
+
+//Ans: 7
+{
+    const countries = ["India", "Pakistan"];
+    countries.unshift("Bangladesh");
+    console.log(countries);
+}
+
+//Ans: 8
+
+{
+    const count = [12, 23, 34, 56,];
+    console.log(count.length);
+}
+
+//Ans:9
+{
+    const joningar = ["a", "b", "c", "d",];
+    const result =joningar.join("-");
+    console.log(result);
+}
+
+//Ans:10
+{
+    const reverted=[1,2,3,4,];
+    reverted.reverse();
+    console.log(reverted);
 }
