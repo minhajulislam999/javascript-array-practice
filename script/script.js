@@ -149,7 +149,56 @@ console.log(fruits);
 }
 
 {
+
+    //✅ Example 15: অ্যারে সাজানো (sort)
+
+
     const names = ["Minhaj", "Rafi", "Jamal", "Arif"];
     names.sort();
     console.log(names);
+}
+
+{
+    const fruits = ["apple", "banana", "orange"];
+    console.log(fruits);
+}
+
+{
+    const fruits = [
+        "lemon",
+        "grape",
+        "peanut"
+    ]
+    console.log(fruits);
+}
+
+{
+    const bikes = [];
+    bikes[0] = "car";
+    bikes[1] = "bike";
+    bikes[2] = "bus";
+    console.log(bikes);
+}
+
+{
+    const numbers = [10, 20, 30, 40, 50];
+    console.log(numbers);
+    const a = new Array(10, 20);
+    console.log(a);
+
+}
+{
+    const mixed = ["string", 10, true, null, undefined];
+    console.log(mixed);
+}
+
+{
+    const villages = ["hakim akhtar", "shah akhtar", "thanbi nagar"];
+    console.log(villages[1]);
+}
+
+{
+    const animals = ["dog", "cat", "cow"];
+    animals[0] = "tiger";
+    console.log(animals);
 }
