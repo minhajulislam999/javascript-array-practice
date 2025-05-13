@@ -264,13 +264,76 @@ console.log(fruits);
 //Ans:9
 {
     const joningar = ["a", "b", "c", "d",];
-    const result =joningar.join("-");
+    const result = joningar.join("-");
     console.log(result);
 }
 
 //Ans:10
 {
-    const reverted=[1,2,3,4,];
+    const reverted = [1, 2, 3, 4,];
     reverted.reverse();
     console.log(reverted);
+}
+
+{
+    const student = {
+        name: "Minhaj",
+        class: 10,
+        marks: {
+            math: 90,
+            science: 85,
+            english: 88
+        }
+    };
+    console.log(student.marks.science);//এখানে সাইন্সের নম্বর ডট নোটেশন ব্যবহার করে বের করা হয়েছে 
+}
+
+//Nasting
+
+{
+    const library = {
+        name: "Central Library",
+        books: [
+            { title: "JavaScript Basics", author: "John Doe" },
+            { title: "HTML & CSS", author: "Jane Smith" }
+        ]
+    };
+    console.log(library.books[1].title);//Second book's name: HTML & CSS
+}
+
+{
+    const shop = {
+        name: "Fresh Mart",
+        products: [
+            { name: "Apple", prices: [10, 15, 20] },
+            { name: "Banana", prices: [5, 7, 9] }
+        ]
+    };
+    console.log(shop.products[0].prices[2]); //third apple price: 20
+}
+
+//Exaple 4
+{
+    const data = [
+        { id: 1, name: "A", hobbies: ["reading", "coding"] },
+        { id: 2, name: "B", hobbies: ["writing", "traveling"] }
+    ];
+    console.log(data[0].hobbies[0]); //The first hobby of the second person is reading
+}
+
+//Example 5
+{
+    const school={
+        teachers: [
+            {
+                name:"Mr. Rahim",
+                subjects:["Math", "Physics"]
+            },
+            {
+                name: "Ms. Karim",
+                subjects:["English", "Biology"]
+            }
+        ]
+    };
+    console.log(school.teachers[1].subjects[1]);// the second subject of the second teacher is biology
 }
