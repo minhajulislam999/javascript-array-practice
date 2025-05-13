@@ -323,17 +323,156 @@ console.log(fruits);
 
 //Example 5
 {
-    const school={
+    const school = {
         teachers: [
             {
-                name:"Mr. Rahim",
-                subjects:["Math", "Physics"]
+                name: "Mr. Rahim",
+                subjects: ["Math", "Physics"]
             },
             {
                 name: "Ms. Karim",
-                subjects:["English", "Biology"]
+                subjects: ["English", "Biology"]
             }
         ]
     };
     console.log(school.teachers[1].subjects[1]);// the second subject of the second teacher is biology
 }
+
+//Neting practice Example 1
+
+const company = {
+    name: "TechZone",
+    departments: [
+        {
+            name: "Development",
+            employees: [
+                { name: "Alice", skills: ["JavaScript", "React"] },
+                { name: "Bob", skills: ["Python", "Django"] }
+            ]
+        },
+        {
+            name: "Marketing",
+            employees: [
+                { name: "Charlie", skills: ["SEO", "Content"] }
+            ]
+        }
+
+
+    ]
+
+
+
+};
+
+console.log(company.departments[0].employees[1].skills[1])
+//bob's second skill is Django
+
+console.log(company.departments[1].employees);
+//there is one employee in the marketing department
+
+console.log(company.departments[0].employees[0])
+//the name of first employee in the development department is Alice
+
+const university = {
+    faculties: [
+        {
+            name: "Science",
+            courses: [
+                { name: "Physics", credits: 3 },
+                { name: "Chemistry", credits: 4 }
+            ]
+        },
+        {
+            name: "Arts",
+            courses: [
+                { name: "History", credits: 2 }
+            ]
+        }
+    ]
+};
+console.log(university.faculties[0].courses[1]);
+//the name of the second course in the science is Chemistry
+
+console.log(university.faculties[1].courses[0].credits)
+//there are 2 credits in the first course in the Arts faculty.
+
+console.log(university.faculties)
+
+//The total number of faculties is 2
+
+//Example 3:
+
+{
+    const travel = {
+        countries: [
+            {
+                name: "Japan",
+                cities: ["Tokyo", "Kyoto", "Osaka"]
+            },
+            {
+                name: "USA",
+                cities: ["New York", "Los Angeles", "Chicago"]
+            }
+
+        ]
+    };
+
+    console.log(travel.countries[1].cities[1])
+    //the name of the second city in the usa is los angeles
+
+    //i can't do loops
+}
+
+{
+    const student = {
+        name: "Rahim",
+        exams: {
+            midterm: {
+                math: 80,
+                english: 75
+            },
+            final: {
+                math: 85,
+                english: 78
+            }
+        }
+    };
+    console.log(student.exams.final.english)
+    //the final number of english is 78
+
+    console.log(student.exams.midterm.math + student.exams.final.math)
+    //the total number of midturm and final math is 165
+
+    // console.log(student.exams.final.math + student.exams.)
+
+    // console.log(student)
+}
+
+//Example 5
+
+{
+    const shop = [
+        {
+            category: "Fruits",
+            items: [
+                { name: "Apple", price: 30 },
+                { name: "Banana", price: 10 }
+            ]
+        },
+        {
+            category: "Vegetables",
+            items: [
+                { name: "Carrot", price: 15 }
+            ]
+        }
+    ];
+
+    console.log(shop[0].items[1]);
+    //name and price of fruits categories is Banana , 10
+
+    console.log(shop[1].items.length)
+    //one item is in vegetables category
+
+
+}
+
