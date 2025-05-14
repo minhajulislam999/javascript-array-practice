@@ -627,7 +627,7 @@ console.log(university.faculties)
     //chemistry is second faculty in since department
 
 
-    console.log(university.faculties[1].course[0].credits)
+    console.log(university.faculties[1].courses[0].credits)
     //2 credits in arts faculty
 
 }
@@ -713,4 +713,85 @@ console.log(university.faculties)
 
     console.log(shop.category[1].items.length)
     //there is one item in the second category of the shop
+}
+
+//✅ প্রশ্ন সেট (তুমি নিজে কোড লিখবে)
+
+//📌 প্রশ্ন ১:
+
+{
+    const school = {
+        class: [
+            {
+                name: "Class 7",
+                students: [
+                    { name: "Arif", roll: 9 },
+                    { name: "Ahamad", roll: 8 }
+                ]
+            },
+            {
+                name: "Class 8",
+                students: [
+                    { name: "Jamal", roll: 5 },
+                    { name: "Rimon", roll: 6 }
+                ]
+            }
+        ]
+    };
+    console.log(school.class[1].students[0].name);
+    //the student name of second class is jamal
+}
+
+//📌 প্রশ্ন ২:
+
+{
+    const library = {
+        section1: [
+            {
+                name: "Fiction",
+                books: [
+                    { title: "1984", author: "George Orwell" },
+                    { title: "To Kill a Mockingbird", author: "Harper Lee" }
+                ]
+            },
+
+        ],
+        section2: [
+            {
+                name: "Non Fiction",
+                books: [
+                    { title: "Atomic Habits", author: "James Clear" },
+                    { title: "Rich Dad Poor Dad", author: "Robert T. Kiyosaki" },
+                ]
+            }
+
+        ]
+    };
+    console.log(library.section1[0].books[1].title);
+    //the second book name is To  kill a mockngbird in section 1
+}
+
+//📌 প্রশ্ন ৩:
+
+{
+    const restaurant = {
+        menuCategory: [
+            {
+                name: "Main Course",
+                items: [
+                    { name: "Kacchi biriyani", price: 300 },
+                    { name: "Jali kabab", price: 100 }
+                ]
+            },
+            {
+                name: "Drink",
+                items: [
+                    { name: "Burhani", price: 80 },
+                    { name: "Cold coffe", price: 200 }
+                ]
+            }
+        ]
+    };
+    console.log(restaurant.menuCategory[0].items[1].price);
+    //the second item price is 100 tk in the main course
 }
