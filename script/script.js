@@ -476,3 +476,74 @@ console.log(university.faculties)
 
 }
 
+//practce 1:
+
+{
+    const restaurant = {
+        FastFood: {
+            items: ["Burger", "Pizza"]
+        },
+
+        Drinks: {
+            items: ["Coke", "Juice"]
+        }
+    }
+}
+
+//🧠 Practice 2:
+
+{
+    const student = {
+        exams: {
+            midterm: {
+                math: [90],
+                english: [65]
+
+            },
+            final: {
+                math: [70],
+                english: [40]
+
+            }
+
+        }
+    }
+}
+
+//🧠 Practice 3:
+
+{
+    const hospital = {
+        departments: [
+            {
+                name: "Cardiology",
+                doctors: [
+                    {
+                        name: "jahangir kabir",
+                        experience: 40
+                    }
+                ]
+            },
+            {
+                name: "medicine",
+                doctors:[
+                    {
+                        name:"tawhid",
+                        experience:5
+                    }
+                ]
+            },
+            {
+                name:"nurology",
+                doctors:[
+                    {
+                        name:"jamil",
+                        experience:8
+                    }
+                ]
+            }
+
+        ]
+    }
+    console.log(hospital);
+}
