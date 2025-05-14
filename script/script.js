@@ -795,3 +795,108 @@ console.log(university.faculties)
     console.log(restaurant.menuCategory[0].items[1].price);
     //the second item price is 100 tk in the main course
 }
+
+
+//✅ প্রশ্ন সেট – ১ (Medium Level)
+
+//📌 প্রশ্ন ১:
+
+{
+    const university = {
+        department: [
+            {
+                name: "Computer Science",
+                courses: [
+                    { name: "Programming", credits: 3 },
+                    { name: "Data Structure", credits: 4 }
+
+                ]
+
+            },
+            {
+                name: "English",
+                courses: [
+                    { name: "Literature", credits: 2 },
+                    { name: "Writing Skills", credits: 3 }
+                ]
+            }
+
+        ]
+    }
+    console.log(university.department[0].courses[1]);
+    //the second course of computer department is Data structure and it has tow credits
+
+
+    console.log(university.department[1].courses[0].credits)
+    //the first course of english department is two credits
+
+    console.log(university.department[1].courses[1].name);
+    //the name of second english course is writing skills.
+}
+
+//📌 প্রশ্ন ২:
+
+{
+    const movieTheater = {
+        Screen1: {
+            Movies: [
+                { name: "Inception", ShowTime: "7.00pm" },
+                { name: "Interstellar", ShowTime: "9.30pm" }
+            ]
+        },
+        Screen2: {
+            Movies: [
+                { name: "Avengers", ShowTime: "6:00pm" },
+                { name: "Iron Man", ShowTime: "8:30pm" }
+            ]
+        }
+
+    };
+    console.log(movieTheater.Screen1.Movies[1].ShowTime);
+    //The ShowTime is second cinema is 9:30pm
+
+    console.log(movieTheater.Screen2.Movies[0].name);
+    //the first cinema name of screen 2 is Avengers
+
+    console.log(movieTheater.Screen2.Movies[1].ShowTime);
+    //ShowTime of iron man movie is 8:30pm 
+}
+
+//📌 প্রশ্ন ৩:
+
+{
+    const employeeData={
+        departments:{
+            HR:[
+                {
+                    Employees:[
+                        {name:"Salma", Position:"Manager"},
+                        
+                    ]
+                }
+            ],
+            IT:[
+                {
+                    Employees:[
+                        {name:"Riyad", Position:"Developer"}
+                    ]
+                }
+            ],
+            Accounts:[
+                {
+                    Employees:[
+                        {name:"Karim", Position:"Accountant"}
+                    ]
+                }
+            ]
+        }
+    };
+    console.log(employeeData.departments.IT[0].Employees[0].name);
+    //the employe of it department is Riyad.
+
+    console.log(employeeData.departments.Accounts[0].Employees[0].name);
+    //employee of accountent department is karim
+
+    console.log(employeeData.departments.HR[0].Employees[0].name);
+    //the employee name of hr department is salma. 
+}
