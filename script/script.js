@@ -338,7 +338,7 @@ console.log(fruits);
     console.log(school.teachers[1].subjects[1]);// the second subject of the second teacher is biology
 }
 
-//Neting practice Example 1
+//Nesting practice Example 1
 
 const company = {
     name: "TechZone",
@@ -526,19 +526,19 @@ console.log(university.faculties)
             },
             {
                 name: "medicine",
-                doctors:[
+                doctors: [
                     {
-                        name:"tawhid",
-                        experience:5
+                        name: "tawhid",
+                        experience: 5
                     }
                 ]
             },
             {
-                name:"nurology",
-                doctors:[
+                name: "nurology",
+                doctors: [
                     {
-                        name:"jamil",
-                        experience:8
+                        name: "jamil",
+                        experience: 8
                     }
                 ]
             }
@@ -546,4 +546,171 @@ console.log(university.faculties)
         ]
     }
     console.log(hospital);
+}
+
+//✅ Practice Set 1:
+
+{
+    const hospital = {
+        departments: [
+            {
+                name: "Cardiology",
+                doctor: {
+                    name: "nasrullah",
+                    experience: 40
+
+                }
+            },
+            {
+                name: "Medicine",
+                doctor: {
+                    name: "asif mahmud",
+                    experience: 30
+                }
+            },
+            {
+                name: "Neurology",
+                doctor: {
+                    name: "Ahmadullah",
+                    experience: 7
+                }
+            }
+        ]
+    };
+    console.log(hospital.departments[0].doctor.name)
+    //cardiology doctor name is nasrullah
+
+    console.log(hospital.departments[1].name)
+    //asif mahmud's department is medicine
+
+    console.log(hospital.departments[2].doctor.experience)
+    //neurology doctor's experience is 7 years
+}
+
+//📌 প্রশ্ন ২:
+
+{
+    const university = {
+        faculties: [
+            {
+                name: "Science",
+                courses: [
+                    {
+                        name: "Physics",
+                        credits: 3
+                    },
+                    {
+                        name: "Chemistry",
+                        credits: 4
+                    }
+                ]
+
+            },
+            {
+                name: "Arts",
+                courses: [
+                    {
+                        name: "history",
+                        credits: 2
+                    }
+
+                ]
+
+
+            }
+        ]
+    }
+    console.log(university.faculties[0].courses[0])
+    //3 credits for physics
+
+    console.log(university.faculties[0].courses[1].name)
+    //chemistry is second faculty in since department
+
+
+    console.log(university.faculties[1].course[0].credits)
+    //2 credits in arts faculty
+
+}
+
+//📌 প্রশ্ন ৩:
+
+{
+    student = {
+        name: "Rahim",
+        exams: [
+            {
+                midterm: {
+                    english: 34,
+                    math: 30
+                },
+                final: {
+                    english: 89,
+                    math: 90
+                }
+            }
+        ]
+    }
+
+    console.log(student.exams[0].final.english)
+    //the final result of english is 89
+
+    console.log(student.exams[0].midterm.math)
+    //midterm result is 30
+
+    console.log(student.exams[0].final.math)
+    //final result of math is 90
+
+    console.log(student.exams[0].midterm.english)
+    //the result is 34
+}
+
+//📌 প্রশ্ন ৪:
+
+{
+    const travel = {
+        countries: [
+            {
+                name: "Japan",
+                cities: [
+                    "Tokyo", "Kyoto", "Osaka"
+                ]
+            },
+            {
+                name: "USA",
+                cities: [
+                    "New York", "Los Angeles", "Chicago"
+                ]
+            }
+        ]
+    };
+
+    console.log(travel.countries[0].cities[1]);
+    //the second citie of japan is kyoto
+    console.log(travel.countries[1].cities[2])
+    //the third citie of usa is chicago
+}
+
+{
+    const shop = {
+        category: [
+            {
+                name: "Fruits",
+                items: [
+                    { name: "Apple", price: 30 },
+                    { name: "Banana", price: 10 }
+                ]
+            },
+            {
+                name: "Vegetables",
+                items: [
+                    { name: "Carrot", price: 10 }
+                ]
+            },
+        ]
+    };
+    console.log(shop.category[0].items[1]);
+    //the first item is banana in shop category
+
+    console.log(shop.category[1].items.length)
+    //there is one item in the second category of the shop
 }
