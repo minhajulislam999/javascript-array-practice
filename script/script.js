@@ -1033,3 +1033,162 @@ console.log(university.faculties)
 
     console.log("Thank you for using Array Manager App");
 }
+
+{
+    let garden = ["Mango", "Guaba", "Deets", "Agacha"];
+    garden.pop();
+    console.log(garden);
+
+    garden.push("Banana", "Data", "Pepe");
+
+
+    console.log(garden.length);
+}
+{
+    // This is a copy of the documentation;
+    //  I learned from it. 
+    //  Now give me a practice task based on it
+}
+{
+    const colors = ["Red", "Green", "Blue", "Yellow"];
+    const color = colors.toString()
+    console.log(color);
+}
+{
+    const numbers = [10, 20, 30, 40, 50];
+    const number = numbers.toString();
+    console.log(number);
+}
+{
+    const mixed = ["Apple", 42, true, "Orange"];
+    const mixString = mixed.toString();
+    console.log(mixString);
+}
+{
+    const menu = ["greel", "butter nun", "card", "lacchi"];
+    const menuTo = menu.toString();
+    console.log(menuTo);
+}
+{
+    const arr = [100, 200, 300];
+    console.log(arr.toString());
+}
+{
+    const data = ["JavaScript", 2025, true];
+    const dataString = data.toString;
+}
+{
+    const mixed = ["String", 100, true];
+    const mixString = mixed.toString();
+    console.log(mixString);
+}
+{
+    const letters = ["A", "B", "C", "D"];
+    const letterString = letters.toString();
+    console.log(letterString);
+}
+
+//✅ প্র‍্যাকটিস প্রশ্ন (JavaScript Array at())
+
+{
+    const colors = ["Red", "Green", "Blue", "Yellow"];
+    const color = colors.at(1);
+    console.log(color);
+
+    const numbers = [10, 20, 30, 40, 50];
+    const number = numbers.at(-1);
+    console.log(number);
+
+    const days = ["Sun", "Mon", "Tue", "Web", "Thu"];
+    const day = days.at(-2);
+    console.log(day);
+
+    const fruits = ["Apple", "Banana", "Orange", "Mango"];
+    const fruit = fruits.at(-2);
+    console.log(fruit);
+
+    const items = ["Pen", "Pencil", "Eraser"];
+    const itme = items.at(100);
+    console.log(itme);
+    //this is return undefind
+}
+
+//✅ প্র্যাকটিস প্রশ্ন (Array.at):
+
+{
+    const letters = ["A", "B", "C", "D", "E"];
+    const letter = letters.at(-3);
+    console.log(letter);
+    //this a one way 
+    const letter1 = letters.at(2);
+    console.log(letter1);
+    //this is another method.
+
+    const scores = [45, 55, 65, 75, 85];
+    const score = scores.at(-1);
+    console.log(score);
+
+    const mix = ["Apple", 10, true, null, "End"];
+    console.log(mix.at(-2));
+    //will get 4th index that is null 
+
+
+    const emptyArray = [];
+    const emty = emptyArray.at(0);
+    console.log(emty);
+    //emty will return undefined 
+
+
+    const data = ["X", "Y", "Z"];
+    const d = data.at(5);
+    console.log(d);
+    //this method also return undefined
+
+    const months = ["Jan", "Feb", "Mar", "Apr", "May"];
+    const month = months.at(-3);
+    console.log(month);
+    //this method will return "mar", because it is third frome the end.
+
+
+    const custom = ["First", "Second", "Third", "Fourth"];
+    const cust = custom.at(-1);
+    console.log(cust);
+
+}
+{
+    //✅ Practice 1:
+
+
+    const names = ["Minhajul", "Islam", "Hero"];
+    const joining = names.join(" ");
+    console.log(joining);
+
+
+    //✅ Practice 2:
+
+    const numbers = [10, 20, 30, 40];
+    const number = numbers.join("-");
+    console.log(number);
+
+    //✅ Practice 3:
+
+    const vowels = ["A", "E", "I", "O", "U"];
+    const vowels1 = vowels.join("|")
+    console.log(vowels1);
+
+
+    //✅ Practice 4:
+
+    const mix = ["Apple", 100, true, "Orange"];
+    const mixed = mix.join("")
+    console.log(mixed);
+
+
+    //✅ Practice 5 (Bonus):
+
+    const emptyArray = [];
+    const emty = emptyArray.join(",");
+    console.log(emptyArray);
+    //this emty array return also empty array written in the array lenth 0
+    
+}
