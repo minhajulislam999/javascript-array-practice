@@ -865,27 +865,27 @@ console.log(university.faculties)
 //📌 প্রশ্ন ৩:
 
 {
-    const employeeData={
-        departments:{
-            HR:[
+    const employeeData = {
+        departments: {
+            HR: [
                 {
-                    Employees:[
-                        {name:"Salma", Position:"Manager"},
-                        
+                    Employees: [
+                        { name: "Salma", Position: "Manager" },
+
                     ]
                 }
             ],
-            IT:[
+            IT: [
                 {
-                    Employees:[
-                        {name:"Riyad", Position:"Developer"}
+                    Employees: [
+                        { name: "Riyad", Position: "Developer" }
                     ]
                 }
             ],
-            Accounts:[
+            Accounts: [
                 {
-                    Employees:[
-                        {name:"Karim", Position:"Accountant"}
+                    Employees: [
+                        { name: "Karim", Position: "Accountant" }
                     ]
                 }
             ]
@@ -899,4 +899,64 @@ console.log(university.faculties)
 
     console.log(employeeData.departments.HR[0].Employees[0].name);
     //the employee name of hr department is salma. 
+}
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits.toString())
+
+
+    document.getElementById("demo").innerHTML = fruits.toString();
+}
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits.length);
+    //size of length is 4
+}
+
+{
+    const emptyArray = [];
+    console.log(emptyArray.length);
+    //length of empty array is zero
+
+    //length property is riturn length that means size of an array
+
+}
+{
+    const colors = ["Red", "Green", "Blue"];
+    let size = colors.length;
+    console.log(size)
+    //this property length is 3
+
+    let size2 = colors.push("Yellow");
+    console.log(size2);
+    //yes push method retuns new array length like this example 4
+}
+
+{
+    const myArray = ["Pen", "Pencil"];
+    myArray[5] = "Eraser";
+    console.log(myArray.length);
+    console.log(myArray[4]);
+    //the value of myArray.length is 6
+}
+{
+    const lgtpd = ["a", "p", "l"];
+    console.log(lgtpd[2].length);
+    //defines the last element frome an array by using length properties is declare the array name first breaket then use the index number 
+
+}
+{
+    const data = ["A", "B", "C"];
+    data.length = 5;
+    console.log(data);
+    //this array number is 5. after the two element javascript create some emty array to 5
+}
+{
+    const myArray=[10, 20, 30,40];
+   let terray= myArray.length=0;
+    console.log(myArray)
+    console.log(terray);
+    //the whay to delete all elements frome array by using lenth method is .length=0 that means this length equal zero then console it length is zero 
 }
