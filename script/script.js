@@ -954,9 +954,82 @@ console.log(university.faculties)
     //this array number is 5. after the two element javascript create some emty array to 5
 }
 {
-    const myArray=[10, 20, 30,40];
-   let terray= myArray.length=0;
+    const myArray = [10, 20, 30, 40];
+    let terray = myArray.length = 0;
     console.log(myArray)
     console.log(terray);
     //the whay to delete all elements frome array by using lenth method is .length=0 that means this length equal zero then console it length is zero 
+}
+{
+    const numbers = [1, 2, 3, 4, 5];
+    const number = numbers.length;
+    console.log(number);
+    //this code length is 5
+}
+
+{
+    const elementArray = ["oneElement", "TwoElement", "ElementThree"];
+    const deleted = elementArray.pop();
+    console.log(elementArray.length);
+    //if we delete the element frome array by pop method then array is 2
+
+}
+{
+    const items = ["book", "pen"];
+    items[4] = "pencil";
+    console.log(items.length);
+    //out put is here is 5 becouse it self create some emty method bydefault
+
+}
+{
+    const x = [10, 20, 30];
+    const lastElement = x.length - 1;
+    const properdy = x[lastElement];
+    console.log(properdy);
+    //by this way we may solve this problem
+
+}
+{
+    const arr = [100, 200];
+    arr.length = 4;
+    console.log(arr[3]);
+    //in arr[3] is undefined
+}
+{
+    const a = ["x", "y", "z"];
+    const b = a.length = 0;
+    console.log(b);
+    //i solved this prolem by using this zero methods
+}
+
+{
+    const b = [1, 2, 3, 4, 5];
+    const c = b.length = 2;
+    console.log(c);
+    //i will manupulate this way javascript not know why not javascript is  fooish
+}
+{
+    const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const b = a.length = 5;
+    console.log(b);
+    //
+}
+
+{
+    let myList = ["Milk", "Bread", "Egg"];
+    console.log("Total items:", myList.length);
+
+    myList.push("Butter");
+    console.log("New item added. Total items now:", myList.length);
+
+    myList.pop();
+    console.log("Last item removed. Total items now:", myList.length);
+
+    myList.length = 2;
+    console.log("Truncated list:", myList);
+
+    myList.length = 0;
+    console.log("All items deleted. Total items now:", myList.length);
+
+    console.log("Thank you for using Array Manager App");
 }
