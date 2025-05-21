@@ -1459,3 +1459,43 @@ console.log(university.faculties)
 
 
 }
+{
+    //✅ চ্যালেঞ্জ ১
+
+    const food = ["Rice", "Fish", "Meat", "Vegetable", "Soup"];
+    food.copyWithin(2, 0);
+    console.log(food);
+    //copy to index 2, all elements from index 0
+
+
+
+    //✅ চ্যালেঞ্জ ২
+
+    const colors = ["Red", "Green", "Blue", "Yellow", "Purple", "Pink"];
+    colors.copyWithin(1, 3);
+    console.log(colors);
+    //copy to index 1, from index 3
+
+
+    //✅ চ্যালেঞ্জ ৩
+
+    const birds = ["Crow", "Sparrow", "Pigeon", "Parrot", "Peacock", "Eagle"];
+    console.log(birds);
+    birds.copyWithin(2, 4, 6);
+
+
+    //✅ চ্যালেঞ্জ ৪ (Tricky)
+
+    const gadgets = ["Phone", "Laptop", "Tablet", "Camera", "Speader", "Watch"];
+    gadgets.copyWithin(1, 0, 3);
+    console.log(gadgets);
+
+
+    //✅ চ্যালেঞ্জ ৫ (Bonus - Full Replace)
+
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","","",""];
+    months.copyWithin(2, 0);
+    console.log(months);
+
+
+}
