@@ -1190,5 +1190,165 @@ console.log(university.faculties)
     const emty = emptyArray.join(",");
     console.log(emptyArray);
     //this emty array return also empty array written in the array lenth 0
-    
+
+}
+{
+    const animals = ["Tiger", "Lion", "Elephant"];
+    animals.pop();
+    console.log(animals);
+
+    //the last item elephent will be removed, and tigar and lion will remain.
+
+
+
+
+    //✅ Practice 2:
+
+    const colors = ["Red", "Green", "Blue"];
+    const removed = colors.pop();
+    console.log("Removed:", removed);
+    console.log("Now:", colors);
+    //blue will remove and new array will be red, green
+
+
+    //✅ Practice 3:
+
+
+    const books = ["Math", "Science"];
+    books.push("English");
+    console.log(books);
+    //english book will join and return as new array lenth
+
+
+    //✅ Practice 4:
+
+    const scores = [90, 85];
+
+    let newLength = scores.push(75);
+
+    console.log("Length:", newLength);
+    console.log("Scores:", scores);
+    //75 will add in the array, and the will return new array lenth is 3
+    //75 will be added to the array, and it will return the new array length as 3.
+
+
+
+    //✅ Practice 5 (Mix):
+
+
+
+    const foods = ["Burger", "Pizza"];
+    foods.push("Pasta");
+    foods.pop();
+    console.log(foods);
+    //will only remain  pizz and pasta will be added then will be removed.
+
+}
+
+{
+    const languages = ["JavaScript", "Python", "C++", "Java"];
+    const language = languages.shift();
+    console.log("Removed:", language);
+    //becouse of using shift, the first item "JavaScript" has been removed.
+
+    console.log("Now:", languages);
+    //now this three remain:"Python", "C++", "Java"
+
+
+    const newArrayLength = languages.unshift("HTML");
+    console.log("New Length:", newArrayLength)
+    console.log("Updated:", languages);
+    //i followed your instruction. check how it lokks
+
+
+
+}
+{
+    const countries = ["Bangladesh", "Nepal", "Bhutan", "Maldives"];
+    const remove = countries.shift();
+    const remo = countries.shift();
+    console.log("removed 2countries:", remove, remo);
+    console.log("Now:", countries);
+    //I used the method to delete the first two items.
+
+    const lengthArray = countries.unshift("Japan", "Korea");
+    console.log(lengthArray);
+    //using unshift i added japan ana korea to the beginning of the array, now length 4.
+
+
+
+
+
+}
+{
+    const countries = ["India", "China", "Thailand", "Vietnam"];
+    const countryShift = countries.shift();
+    console.log("removed:", countryShift);
+    //using shift method first index removed.
+
+    const pushing = countries.push("Singapore");
+    console.log("added a country in last index:", pushing);
+    //pushed a new country
+
+    const unshifting = countries.unshift("Sri Lanka");
+    console.log("A new country unshifed in first index:", unshifting);
+    //a new country unshifed in the first index
+
+
+    const poping = countries.pop();
+    console.log("last index item removed:", poping);
+    //last item removed
+    console.log("total countries:", countries, "total length:", countries.length);
+    //total countries consoled and lengthed
+}
+{
+    const fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+    fruits.shift();
+    fruits.shift();
+    console.log(fruits);
+    //first two item removed
+
+    fruits.unshift("Fig", "Grapes");
+    console.log(fruits);
+    //added two item in first index
+
+    fruits.push("Honeydew", "Indian Fig");
+    console.log(fruits);
+    //added two items in the last index
+
+    fruits.pop();
+    console.log(fruits);
+    //one item removed from the last index
+
+    console.log(fruits);
+    //total array index.
+
+    console.log(fruits.length);
+    //final array length
+
+
+}
+{
+    const books = ["Math", "English", "Biology", "Chemistry", "Physics"];
+    books.shift();
+    console.log(books);
+    //removed the first index using shift methods
+
+    books.unshift("Bangla", "ICT");
+    console.log(books);
+    //added two elements in first indexes
+
+    books.push("Economics", "Psychology");
+    console.log(books);
+    //added two items in the last indexes
+
+    books.pop();
+    books.pop();
+    console.log(books);
+    //two elements delete frome last index
+
+   const book= books.join("|");
+    console.log(book);
+    //done based on your requerment
+
 }
