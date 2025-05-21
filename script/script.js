@@ -1347,8 +1347,60 @@ console.log(university.faculties)
     console.log(books);
     //two elements delete frome last index
 
-   const book= books.join("|");
+    const book = books.join("|");
     console.log(book);
     //done based on your requerment
+
+}
+
+{
+
+    //✅ চ্যালেঞ্জ ১:
+
+    const countries = ["Bangladesh", "India", "Nepal"];
+    countries[countries.length] = "Vutan";
+
+    console.log(countries);
+    //added a new country by using length property
+
+
+    //✅ চ্যালেঞ্জ ২:
+
+    const friends = ["Abu Bakar", "Omar", "Usman", "Ali"];
+    friends[friends.length] = "Belal";
+    friends[friends.length] = "Abu Hanifa";
+    console.log(friends);
+    //added two friends name by using length property
+
+
+
+}
+{
+    const animals = [];
+    animals[animals.length] = "Cat";
+    animals[animals.length] = "Dog";
+    animals[animals.length] = "Rabbit";
+    animals[animals.length] = "Munkey";
+    console.log(animals);
+
+    const numbers = [10, 20, 30];
+    numbers[numbers.length] = 40;
+    numbers[numbers.length] = 50;
+    numbers[numbers.length] = 60;
+    console.log(numbers);
+    //full array printed
+
+    console.log(numbers.length);
+    //array length is 6
+
+
+    const evenNumbers = [];
+    evenNumbers[evenNumbers.length] = "2";
+    evenNumbers[evenNumbers.length] = "4";
+    evenNumbers[evenNumbers.length] = "6";
+    evenNumbers[evenNumbers.length] = "8";
+    evenNumbers[evenNumbers.length] = "10";
+    console.log(evenNumbers);
+    //i printed the numbers on your instruction
 
 }
