@@ -1404,3 +1404,58 @@ console.log(university.faculties)
     //i printed the numbers on your instruction
 
 }
+{
+    //✅ চ্যালেঞ্জ ১: দুইটা অ্যারে merge করো
+
+    let fruits1 = ["Apple", "Banana"];
+    let fruits2 = ["Mango", "Pineapple"];
+
+    const allFruits = fruits1.concat(fruits2);
+    console.log(allFruits);
+    //your requarement done
+
+
+    //✅ চ্যালেঞ্জ ২: তিনটা অ্যারে merge করো
+
+    const breakfast = ["Porota", "Dal", "Vaji", "Nehari"];
+    const lunch = ["Biriyani", "Kacchi", "KalaVuna"];
+    const dinner = ["Cheaken Chap", "greel", "Halim"];
+    const allMenu = breakfast.concat(lunch, dinner);
+    console.log(allMenu);
+    //i hobe all is done
+
+
+    //✅ চ্যালেঞ্জ ৩: অ্যারেতে নতুন string যুক্ত করো
+
+    const colors = ["white", "black", "blue"];
+    const allColors = colors.concat("Red", "Green");
+    console.log(allColors);
+    //i hobe wine this chanllenge!
+}
+
+{
+    const animals = ["Cat", "Dog", "Rabbit", "Monkey"];
+    animals.copyWithin(2, 0);
+    console.log(animals);
+    //may be this is right
+
+    const numbers = [1, 2, 3, 4, 5, 6];
+    numbers.copyWithin(3, 0)
+    console.log(numbers);
+
+
+    const alphabets = ["A", "B", "C", "D", "E", "F"];
+    console.log(alphabets)
+    const alpha = alphabets.copyWithin(1, 3);
+    console.log(alpha);
+
+
+    const days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri",];
+    console.log(days);
+
+    const copyDays = days.copyWithin(4, 0, 3);
+    console.log(copyDays);
+    //may be my answer is right on your requerments
+
+
+}
