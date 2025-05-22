@@ -1676,8 +1676,75 @@ console.log(university.faculties)
     //✅ চ্যালেঞ্জ ৬: (splice - tricky)
 
     const numbers = [10, 20, 30, 40, 50, 60];
-    numbers.splice(2, 2,99,100);
+    numbers.splice(2, 2, 99, 100);
     console.log(numbers);
+
+}
+{
+    const fruits = ["Apple", "Banana", "Orange", "Mango", "Lemon"];
+    const spliced = fruits.splice(1, 2);
+    console.log("After splice:", fruits);
+    console.log("Spliced elements:", spliced);
+
+
+    const fruits2 = ["Apple", "Banana", "Orange", "Mango", "Lemon"];
+    const sliced = fruits2.slice(1, 3);
+    console.log("After slice:", fruits2);
+    console.log("Sliced elements:", sliced);
+
+}
+{
+    const fruits = ["Apple", "Orange", "Apple", "Mango"];
+
+    let position1 = fruits.indexOf("Apple");       // Output: 0 (প্রথম "Apple")
+    let position2 = fruits.lastIndexOf("Apple");   // Output: 2 (শেষ "Apple")
+
+    // console.log(position1); // 0
+    console.log(position2); // 2
+
+}
+
+{
+
+    //✅ Practice 1: indexOf() ব্যবহার
+
+    const animals = ["Cat", "Dog", "Elephant", "Dog", "Tiger"];
+    const indexAnimal = animals.indexOf("Dog");
+    console.log(indexAnimal);
+    //index number of Dog is 1
+
+    //✅ Practice 2: lastIndexOf() ব্যবহার
+
+    const lastAnimal = animals.lastIndexOf("Dog");
+    console.log(lastAnimal);
+    //last index number of Dog is 3
+
+
+    //✅ Practice 3: includes() ব্যবহার
+
+    const fruits = ["Apple", "Mango", "Orange"];
+    const trueFruit = fruits.includes("Banana");
+    console.log(trueFruit);
+    //includes is return false beacous Banana nai
+
+
+
+    //✅ Practice 4: একটু মিলিয়ে
+    const fruits1 = ["Banana", "Apple", "Apple", "Mango", "Orange"];
+    const inxFruit = fruits1.indexOf("Apple", 2) + 1;
+    console.log(inxFruit);
+    //find the position of the Apple
+
+    const incFruits = fruits.includes("Grapes", 1);
+
+
+    //✅ Practice 5: Bonus (Negative start index)
+
+    const pets = ["Dog", "Cat", "Rabbit", "Cat", "Fish"];
+    const negetivIndx = pets.indexOf("Cat", -3) + 1;
+    console.log(negetivIndx);
+    //return 4
+
 
 
 
